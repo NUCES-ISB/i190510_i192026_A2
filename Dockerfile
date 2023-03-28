@@ -13,5 +13,8 @@ RUN pip install --trusted-host pypi.python.org -r requirements.txt
 # Define environment variable
 ENV NAME World
 
+# Expose the port that the application will listen on
+EXPOSE 5000
+
 # Run app.py when the container launches
 CMD ["python", "app.py"]
